@@ -59,9 +59,6 @@ Niagara Falls</h5>
     <li>French Fries</li>
     <li>Cookies</li>
     </ul>
-
-    <a href="file:///C:/Users/S545257/Documents/GitHub/webapps-f21-assignment-3-srikanth0655/aboutme.html">aboutme</a>
-
     <h4>Drinks and Food</h4>
 <table style="width: 40%;">
 <tr>
@@ -84,7 +81,27 @@ Niagara Falls</h5>
     <td>KFC</td>
     <td>3$</td>
 </tr>
-</table
+</table>
+
+<hr>
+<h4>Geometry Elementary/Polygons</h4>
+<blockquote>
+  A polygon that has all sides equal and all interior angles equal
+</blockquote>
+<a href="https://www.mathopenref.com/polygonregular.html">Source</a> <br>
+
+<pre>double area(const vector<point>& fig) {
+  double res = 0;
+  for (unsigned i = 0; i < fig.size(); i++) {
+      point p = i ? fig[i - 1] : fig.back();
+      point q = fig[i];
+      res += (p.x - q.x) * (p.y + q.y);
+  }
+  return fabs(res) / 2;
+}</pre>
+<a href="https://cp-algorithms.com/geometry/area-of-simple-polygon.html">Source</a> <br>
+<a href="file:///C:/Users/S545257/Documents/GitHub/webapps-f21-assignment-3-srikanth0655/aboutme.html">aboutme</a>
+
 </body>
 </html>
 
